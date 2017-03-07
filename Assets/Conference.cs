@@ -10,17 +10,17 @@ public class Conference : MonoBehaviour
     void Start()
     {
         vox = gameObject.AddVoximplantSDK(); // extension method helper
-        vox.init(gameObject.name, granted => {
+        vox.init(granted => {
             if (granted) vox.connect(); // check audio and video permissions
         });
         vox.LogMethod += Debug.Log;
-        vox.onConnectionSuccessful += onConnectionSuccessfull;
-        vox.onConnectionFailedWithError += onConnectionFailed;
-        vox.onLoginSuccessful += onLoginSuccessful;
-        vox.onLoginFailed += onLoginFailed;
-        vox.onCallConnected += OnCallConnected;
-        vox.onCallDisconnected += OnCallDisconnected;
-        vox.onCallFailed += OnCallFailed;
+        vox.ConnectionSuccessful += onConnectionSuccessfull;
+        vox.ConnectionFailedWithError += onConnectionFailed;
+        vox.LoginSuccessful += onLoginSuccessful;
+        vox.LoginFailed += onLoginFailed;
+        vox.CallConnected += OnCallConnected;
+        vox.CallDisconnected += OnCallDisconnected;
+        vox.CallFailed += OnCallFailed;
     }
 
     private void onConnectionSuccessfull()
