@@ -4,14 +4,14 @@ using Voximplant;
 
 public class Conference : MonoBehaviour
 {
-    InvSDK vox;
+    VoximplantSDK vox;
     string ACC = "eyeofhell";
 
     void Start()
     {
-        vox = gameObject.AddComponent<InvSDK>();
+        vox = gameObject.AddVoximplantSDK(); // extension method helper
         vox.init(gameObject.name, granted => {
-            if (granted) vox.connect();
+            if (granted) vox.connect(); // check audio and video permissions
         });
         vox.LogMethod += Debug.Log;
         vox.onConnectionSuccessful += onConnectionSuccessfull;
