@@ -37,7 +37,7 @@ VoxEngine.easyProcess(e.call, newCall, ()=>{}, true);
 });
 ```
 
-## Instaling
+## Installing
 
 1. Clone this repo
 2. Install Voximplant Unity SDK from [GitHub Releases](https://github.com/voximplant/unity_sdk/releases)
