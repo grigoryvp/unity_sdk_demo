@@ -21,8 +21,9 @@ namespace BucketKnight
 
         private void Awake()
         {
-            Cloud.OnCloudLoadComplete += OnCloudLoadComplete;
-            Cloud.Initialize();
+            SceneManager.LoadScene(1);
+            // Cloud.OnCloudLoadComplete += OnCloudLoadComplete;
+            // Cloud.Initialize();
         }
     }
 }

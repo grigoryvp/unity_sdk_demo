@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 456e56b711e03451db429a462ff373aa
+guid: ea11573737a0dad42ae322a4c1b09936
+labels:
+- Readme
+timeCreated: 1430152544
+licenseType: Store
 TextScriptImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

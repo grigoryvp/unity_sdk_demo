@@ -243,7 +243,7 @@ namespace CloudOnce
         /// </param>
         public static void Initialize(bool activateCloudSave = true, bool autoSignIn = true, bool autoCloudLoad = true)
         {
-            Provider.Initialize(activateCloudSave, autoSignIn, autoCloudLoad);
+            // Provider.Initialize(activateCloudSave, autoSignIn, autoCloudLoad);
         }
 
         /// <summary>
